@@ -16,7 +16,7 @@ export const auditPage = async (url: string) => {
 
     const responseTime = Date.now() - startTime;
 
-    const contentType = response.headers["content-type"] ?? "";
+    const contentType = response.headers["content-type"] as string;
 
     if (!contentType.includes("text/html")) {
       throw new Error("Only HTML pages are supported.");
