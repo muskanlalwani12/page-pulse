@@ -1,7 +1,7 @@
 import axios from "axios";
 import type { AuditResponse } from "../types/audit";
 
-const API_URL = "http://localhost:5001/api/audit";
+const API_URL = "https://page-pulse-tn56.onrender.com";
 
 export const auditWebsite = async (
   url: string
